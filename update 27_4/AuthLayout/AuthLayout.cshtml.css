@@ -1,0 +1,83 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+    height: fit-content;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    right: 0;
+    bottom: 0px;
+    background: #242121;
+    align-items: center;
+    justify-content: center;
+}
+
+div img {
+    width: 40px;
+    height: 40px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footerBox {
+    width: 100%;
+    padding: 30px;
+}
+
+footer .column1 {
+    width: 25%;
+    gap: 15px;
+    flex-shrink: 0;
+    float: left;
+}
+
+footer .column2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #f8f3e3;
+    width: 50%;
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+footer .column3 {
+    text-align: center;
+    color: #f8f3e3;
+    float: right;
+    justify-content: space-between;
+    width: 25%;
+    font-size: 12px;
+}
+
+@media (max-width: 980px) {
+
+    .column1 {
+        display: none;
+    }
+
+    .column2 {
+        flex: 100%;
+        padding-top: 0px;
+    }
+
+    .column3 {
+        display: none;
+    }
+}

@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "User Profile";
+}
+
+<head>
+    <link rel="stylesheet" href="index.cshtml.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+</head>
+
+<body style="background-color:#f8f3e3">
+    <header>
+        <div class=" container-fluid " id="Header">
+            <div class="row">
+                <div class="col-3">
+                    <a href="https://www.picz.in.th/image/yTOkgn"><img src="https://sv1.picz.in.th/images/2023/04/25/yTOkgn.md.png" alt="yTOkgn.png" /></a>
+                </div>
+                <div class="col-9">
+                    <a href="#">UserProfile</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="left">
+            <div id="profileBox">
+                <div id="TXT1"><h2>User Profile</h2></div>
+                <div id="display"><img id="profilePic" src="https://drive.google.com/uc?id=1ZSpBKwRLtkALH2bpKr9ObBiDTLz3dNPc" /></div>
+                <div id="fullName">
+                    <h5>Name Lastname</h5>
+                </div>
+                <div id="info">
+                    <div class="detail"><p>Username : username</p></div>
+                    <div class="detail"><p>Tel : 0123456789</p></div>
+                    <div class="detail"><p>Email : email@example.com</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="container">
+                <div class="topic">
+                    <div class="TXT">Your︎ ︎ ︎ ︎Job</div>
+                    <button class="button">Add Job</button>
+                </div>
+                <div class="box">
+                    <div class="TXT"><p>no  order</p></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="topic">
+                    <div class="TXT">Your︎ ︎ ︎ ︎Order</div>
+                    <button class="button">Order Food</button>
+                </div>
+                <div class="box">
+                    <div class="TXT"><p>no  order</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

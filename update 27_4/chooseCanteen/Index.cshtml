@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Choose Your Canteen";
+    Layout = "_Layout";
+}
+
+<head>
+    <link rel="stylesheet" href="index.cshtml.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <style>
+        button{
+		border-radius: 35px;
+        width: 120px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        color: #F8F3E3;
+        }
+    </style>
+    
+  </head>
+
+<body style="background-color:#f8f3e3">
+    <header>
+        <div class=" container-fluid " id="Header">
+            <div class="row">
+                <div class="col-3">
+                    <a href="https://www.picz.in.th/image/yTOkgn"><img src="https://sv1.picz.in.th/images/2023/04/25/yTOkgn.md.png" alt="yTOkgn.png" /></a>
+                </div>
+                <div class="col-9">
+                    <a href="#">UserProfile</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <div id="TXT1">Choose Your Canteen</div>
+        <div class="area">
+            <div class="box">
+                <div class="form" action="/action_page.php">
+                    <label class="form-label">canteen : </label>
+                    <div id="inputZone">
+                        <select class="form-control">
+                            <option value="" selected="selected" name="detail" required>choose canteen</option>
+                        </select>
+                    </div>
+                </div>
+                <br /><br>
+                <div class="form">
+                    <label class="form-label">note : </label>
+                    <div id="inputZone"><input class="form-control" name="canteens" placeholder="e.g. no veggie"/></div>
+                </div>
+            </div>
+        </div>
+        <div class="BTzone">
+            <div class="BTbox">
+                <div class="bt1">
+                    <button class="button" style="background: #526FD5">Confirm</button>
+                </div>
+                <div class="bt2">
+                    <button id="cancelBT" class="button" style="background: #FF2047;">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}
