@@ -1,4 +1,4 @@
-﻿* {
+* {
     font-family: "Nunito", sans-serif;
     font-style: normal;
 }
@@ -44,6 +44,9 @@
         }
 }
 
+input {
+    background-color: transparent;
+}
 
 .box-form div {
     height: auto;
@@ -115,8 +118,10 @@
 
 .box-form .right .form-floating {
     overflow: hidden;
-    margin-top: 5px;
-    margin-bottom: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color : transparent;
+
 }
 
     .box-form .right .form-floating label {
@@ -131,9 +136,10 @@
 
 
 #pressButton {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    background-color:transparent;
 }
 
 
