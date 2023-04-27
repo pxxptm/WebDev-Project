@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
@@ -23,45 +23,45 @@
 
             <div class="right">
                 <div class="formArea">
-                    <form id="account" method="post">
+                    <form id="account" method="post" style="align-items:center; ">
                         <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                         <div class="formArea">
                             <div class="fullName">
                                 <div id="firstName" class="form-floating mb-3">
-                                    <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                    <input asp-for="Input.FirstName" style="height: 50px;" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                                     <label asp-for="Input.FirstName">Firstname</label>
                                     <span style="float:left; font-size:1.5vmin;" asp-validation-for="Input.FirstName" class="text-danger"></span>
                                 </div>
                                 <div id="lastName" class="form-floating mb-3">
-                                    <input asp-for="Input.LastName" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                    <input asp-for="Input.LastName" style="height: 50px;"  class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                                     <label asp-for="Input.LastName">Lastname</label>
                                     <span style="float:left; font-size:1.5vmin;" asp-validation-for="Input.LastName" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="Input.UserName" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                <input asp-for="Input.UserName" style="height: 50px"  class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                                 <label asp-for="Input.UserName">Username</label>
                                 <span style="float:left; font-size:1.5vmin;" asp-validation-for="Input.UserName" class="text-danger"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                <input asp-for="Input.Email" style="height: 50px;"  class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                                 <label asp-for="Input.Email">Email</label>
                                 <span style="float:left; font-size:1.5vmin;" asp-validation-for="Input.Email" class="text-danger"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                                <input asp-for="Input.Password" style="height: 50px;"  class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                                 <label asp-for="Input.Password">Password</label>
                                 <span style="float:left; font-size:1.5vmin;" asp-validation-for="Input.Password" class="text-danger"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                                <input asp-for="Input.ConfirmPassword" style="height: 50px;" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                                 <span style="float:left; font-size:1.5vmin;" asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="Input.Telephone" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                                <input asp-for="Input.Telephone" style="height: 50px;" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                                 <label asp-for="Input.Telephone">Phone number</label>
-                                <span style="float:left; font-size:2vmin;" asp-validation-for="Input.Telephone" class="text-danger"></span>
+                                <span style="float:left; font-size:1.5vmin;" asp-validation-for="Input.Telephone" class="text-danger"></span>
                             </div>
                             <div id="pressButton" class="d-flex">
                                 <button id="registerSubmit" type="submit" class="btn btn-primary">Register</button>
