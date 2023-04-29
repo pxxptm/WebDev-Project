@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Change Password";
+}
+
+<head>
+    <link rel="stylesheet" href="index.cshtml.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+</head>
+
+<body style="background-color:#f8f3e3">
+    <header>
+        <div class=" container-fluid " id="Header">
+            <div class="row">
+                <div class="col-3">
+                    <a href="https://www.picz.in.th/image/yTOkgn"><img src="https://sv1.picz.in.th/images/2023/04/25/yTOkgn.md.png" alt="yTOkgn.png" /></a>
+                </div>
+                <div class="col-9">
+                    <a href="#">UserProfile</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <div class="left">
+                 <div class="container">
+				    <div class="TXT1">Manage Your Account</div>
+
+                    <div class="tab">
+					    <button class="tablinks">Profile</button>
+					    <button class="tablinks">Password</button>
+				    </div>
+
+                </div>
+                
+        </div>
+        <div class="right">
+            <div class="container">
+                <div class="TXT1"><p>Change Password</p></div>
+                <div class="success"><p>your password has been changed !</p></div>
+                <form id="profile-form" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                    <div class="form-floating">
+                        <input class="form-control" placeholder="Current password" />
+                        <label class="form-label">Current password</label>
+                        <span style="float:left; font-size:1.5vmin;" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating">
+                        <input class="form-control" placeholder="New password" aria-required="true" />
+                        <label class="form-label">New password</label>
+                        <span style="float:left; font-size:1.5vmin;" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating">
+                        <input class="form-control" placeholder="Confirm new password" aria-required="true" />
+                        <label class="form-label">Confirm new password</label>
+                        <span style="float:left; font-size:1.5vmin;" class="text-danger"></span>
+                    </div>
+                    <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Update password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
